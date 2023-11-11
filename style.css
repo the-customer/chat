@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgba(177, 214, 177,0.3)
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    border: 2px solid darkred;
+    padding: 10px;
+    border-radius: 40px 0 40px 0;
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+}
+
+h1 span{
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 50% 50% 0 0;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+}
+
+.list{
+    border-right: 1px solid gray;
+    padding-right: 10px;
+}
+
+.item{
+    border-bottom: 2px solid lightgreen;
+    padding: 20px 0;
+    min-width: max-content;
+}
+
+.item:hover{
+    background-color: var(--primary-color);
+    color: black;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.new-message{
+    padding: 10px;
+    display: flex;
+    align-items: end;
+
+}
+
+
+button{
+    height: fit-content;
+    padding: 10px 15px;
+    margin-left: 20px;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+}
+
+textarea{
+    flex: 1;
+}
+
+textarea:focus{
+    outline: none;
+    border: 4px solid lightgreen;
+}
+
+.messages{
+    width: 100%;
+    padding-left: 10px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.message{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.text{
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 0 15px 15px 15px;
+    border-top: none;
+    border-left: none;
+    background-color: var(--primary-color);
+}
+
+.date{
+    min-width: fit-content;
+    margin-left: 30px;
+    font-size: 0.5rem;
+}
+
+.date span{
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
