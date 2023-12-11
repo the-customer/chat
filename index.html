@@ -8,22 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="connexion">
+        <h2>Breukh-Chat</h2>
+        <div>
+            <label for="login">Login</label>
+            <input type="text" id="login">
+        </div>
+        <div>
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password">
+        </div>
+        <br>
+        <button class="btnConnexion">Se connecter</button>
+    </div>
     <div class="container">
         <h1><span>Breukh Chat</span></h1>
+        <p class="user">Celui qui c'est connecté</p>
         <div class="box">
             <div class="list"></div>
             <div class="content">
-                <div class="messages">
-                    <h2>Messages de Toto</h2>
-                    <div class="message">
-                        <div class="text">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium reprehenderit quos ullam quasi cumque veritatis aperiam eaque molestiae earum quod.
+                <!-- <div> -->
+                    <h2><span id="msgOwner">Messages de Toto</span> <span class="writting stop">Ecrit...</span></h2>
+                    <div class="messages">
+                        <div class="message">
+                            <div class="text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium reprehenderit quos ullam quasi cumque veritatis aperiam eaque molestiae earum quod.
+                            </div>
+                            <div class="date"><span>10/10/2024 10:00</span></div>
                         </div>
-                        <div class="date"><span>10/10/2024 10:00</span></div>
                     </div>
-                </div>
+                <!-- </div> -->
                 <div class="new-message">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea cols="30" rows="10"></textarea>
                     <button class="send">Envoyer</button>
                 </div>
             </div>

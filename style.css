@@ -19,13 +19,20 @@ body{
 }
 
 .container{
-    border: 2px solid darkred;
+    border: 2px solid lightgreen;
     padding: 10px;
     border-radius: 40px 0 40px 0;
     width: 70%;
     height: 80vh;
     display: flex;
     flex-direction: column;
+}
+
+
+
+.container.hide,
+.connexion.hide{
+    display: none;
 }
 
 h1{
@@ -130,4 +137,13 @@ textarea:focus{
     border-radius: 10px;
 }
 
+.writting{
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: green;
+}
+
+.writting.stop{
+    display: none;
+}
 
